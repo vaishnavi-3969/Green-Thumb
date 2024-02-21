@@ -42,13 +42,13 @@ Knowledge Sharing: Provide a repository of gardening resources, including articl
 4. Community Gardens Map: Display a map showing the locations of community gardens, public green spaces, nurseries, and gardening resources, allowing users to contribute updates and reviews.
 
 <h3>Sustainable Development Goals (SDGs) Addressed:</h3>
-SDG 2: Zero Hunger
-SDG 3: Good Health and Well-Being
-SDG 11: Sustainable Cities and Communities
-SDG 12: Responsible Consumption and Production
-SDG 13: Climate Action
-SDG 15: Life on Land
-SDG 17: Partnerships for the Goals
+1. SDG 2: Zero Hunger
+2. SDG 3: Good Health and Well-Being
+3. SDG 11: Sustainable Cities and Communities
+4. SDG 12: Responsible Consumption and Production
+5. SDG 13: Climate Action
+6. SDG 15: Life on Land
+7. SDG 17: Partnerships for the Goals
 GreenThumb aims to contribute to the achievement of these SDGs by promoting sustainable food systems, enhancing community well-being, and fostering partnerships for sustainable development.
 
 </div>
