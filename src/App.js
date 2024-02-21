@@ -9,7 +9,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={isAuthenticated ? <Landing /> : <Home />} exact />
+          <Route path="/" element={isAuthenticated ? <Home /> : <Landing />} exact />
           <Route path="/profile" element={<Profile />} />
 
         </Routes>
