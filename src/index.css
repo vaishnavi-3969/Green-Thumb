@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
