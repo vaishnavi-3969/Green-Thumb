@@ -1,5 +1,11 @@
 <div>
-
+  <div align='center'>
+    <h1>Green Thumb</h1>
+  </div>
+<h1>Tech Stack:</h1>
+<div align='center'>
+<img src="https://skillicons.dev/icons?i=react,tailwind,git,github,js,vercel" />
+</div>
 <h1>Problem Statement:</h1>
 <p>In today's fast-paced world, where urbanization is on the rise and green spaces are diminishing, there is a growing need for accessible platforms that promote sustainable practices, community engagement, and healthy lifestyles. Lack of access to fresh, nutritious food and limited opportunities for outdoor activities contribute to various societal challenges, including food insecurity, poor physical and mental health, and environmental degradation.
 
