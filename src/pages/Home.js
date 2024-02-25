@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMenu, FiLogOut } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const Home = () => {
-  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+  const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
+  const [greeting, setGreeting] = useState('Welcome');
+
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      setGreeting(`Welcome, ${user.name.split(' ')[0]}`);
+    }
+  }, [isAuthenticated, user]);
 
   return (
     <div className="bg-green-100 min-h-screen">
@@ -17,7 +24,11 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 0.8, type: 'spring', stiffness: 120 }}
           className="text-4xl font-bold text-green-900 mb-8"
         >
-          Grow Your Passion for Gardening
+          {isAuthenticated ? (
+            <span>{greeting}</span>
+          ) : (
+            <span>Grow Your Passion for Gardening</span>
+          )}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

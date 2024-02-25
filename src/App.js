@@ -1,8 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Home, Landing } from "./pages";
+import { Community, Error, Home, Landing, MyGardens } from "./pages";
 import { useAuth0 } from "@auth0/auth0-react";
 import Profile from "./pages/Profile";
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 
 function App() {
   const { isAuthenticated } = useAuth0();
@@ -11,9 +11,21 @@ function App() {
       <Router>
         {isAuthenticated && <Navbar />}
         <Routes>
-          <Route path="/" element={isAuthenticated ? <Home /> : <Landing />} exact />
-          <Route path="/profile" element={<Profile />} />
+          {
+            isAuthenticated ? (
+              <>
+                <Route path="/" element=<Home /> exact />
+                <Route path="/profile" element=<Profile /> exact />
+                <Route path="/my_garden" element=<MyGardens/> exact/>
+                <Route path="/community" element=<Community /> exact />
+              </>
+            ) : (
+              <Route path="/" element=<Landing /> exact />
+            )
+          }
+          <Route path="*" element=<Error /> exact />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
