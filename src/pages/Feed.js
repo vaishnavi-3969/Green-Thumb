@@ -70,10 +70,15 @@ const Feed = () => {
     };
 
     return (
-        <div className="social-feed bg-gradient-to-br from-purple-900 to-blue-900 text-white px-6 py-6">
-            <h2 className="text-3xl font-bold mb-4">Social Feed</h2>
-            <div className="bg-gray-800 px-6 py-6">
-                {/* Create Post Section */}
+        <div className="social-feed bg-gradient-to-r from-color4 to-color1  text-white px-6 py-6">
+            <h2 className="text-3xl font-bold mb-4 text-yellow-300 text-[32px]">Garden of Conversations: A Social Feed for Green Enthusiasts🌿🌻🌺
+            </h2>
+            <p>
+                Join Our Green Oasis:
+                Dive into the Garden of Conversations and immerse yourself in a world where every post is a budding opportunity for connection and inspiration. Whether you're a seasoned gardener or just starting out, everyone is welcome to share, learn, and grow together in this verdant oasis of online conversation.
+                So grab your gardening gloves and dive into the Garden of Conversations – where every interaction plants a seed of connection and every post adds a leaf to our flourishing community!
+            </p>
+            <div className=" px-6 py-6">
                 <div className="mb-4">
                     <textarea
                         value={newPostContent}
@@ -88,24 +93,25 @@ const Feed = () => {
                 {/* Feed Items */}
                 {feedItems.map((item) => (
                     <div className="feed-item" key={item.id}>
-                        <div className="feed-header">
-                            <div className="user-avatar"></div>
-                            <div className="user-info">
-                                <p className="user-name">{item.user}</p>
-                                <p className="timestamp">{item.timestamp}</p>
+                        <div className="feed-box bg-gray-900 rounded-lg p-4 mb-4">
+                            <div className="feed-header flex items-center mb-2">
+                                <div className="user-avatar bg-white rounded-full mr-2"></div>
+                                <div className="user-info">
+                                    <p className="user-name">{item.user}</p>
+                                    <p className="timestamp text-gray-400">{item.timestamp}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="feed-content">
-                            <p>{item.content}</p>
-                        </div>
-                        <div className="feed-footer">
-                            <div className="likes" onClick={() => handleLike(item.id)}>
-                                <FaThumbsUp /> <span className="count">{item.likes}</span> Likes
+                            <div className="feed-content mb-2">
+                                <p>{item.content}</p>
                             </div>
-                            <div className="comments">
-                                <FaComment /> <span className="count">{item.comments}</span> Comments
+                            <div className="feed-actions flex justify-between">
+                                <div className="likes" onClick={() => handleLike(item.id)}>
+                                    <FaThumbsUp className="text-blue-500 cursor-pointer mr-1" /> <span className="count">{item.likes}</span> Likes
+                                </div>
+                                <div className="comments">
+                                    <FaComment className="text-gray-400 mr-1" /> <span className="count">{item.comments}</span> Comments
+                                </div>
                             </div>
-                            <hr />
                         </div>
                     </div>
                 ))}

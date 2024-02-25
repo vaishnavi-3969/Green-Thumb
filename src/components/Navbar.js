@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-import { FaBook, FaComment, FaHome, FaLayerGroup, FaLeaf, FaSeedling, FaStar, FaUser, FaUsers } from 'react-icons/fa';
+import { FaBook, FaCartPlus, FaComment, FaHome, FaLayerGroup, FaLeaf, FaSeedling, FaStar, FaUser, FaUsers } from 'react-icons/fa';
 import { FiGlobe, FiLogIn, FiLogOut } from 'react-icons/fi';
 
 const Navbar = () => {
@@ -19,8 +19,10 @@ const Navbar = () => {
             <Link to="/my_garden" className="text-white hover:text-green-100 flex">My Gardens<span className='text-lg m-1'><FaLeaf /></span></Link>
             <Link to="/community" className="text-white hover:text-green-100 flex">Community<span className='text-lg m-1'><FiGlobe /></span></Link>
             <Link to="/resources" className="text-white hover:text-green-100 flex">Resources<span className='text-lg m-1'><FaBook /></span></Link>
+            <Link to="/feed" className="text-white hover:text-green-100 flex">Feed<span className='text-lg m-1'><FaComment /></span></Link>
             <Link to="/leaderboard" className="text-white hover:text-green-100 flex">Leaderboard<span className='text-lg m-1'><FaStar /></span></Link>
             <Link to="/gardening_challenges" className='text-white hover:text-green-100 flex'>Challenges<span className='text-lg m-1'><FaSeedling /></span></Link>
+            <Link to="/marketplace" className='text-white hover:text-green-100 flex'>Marketplace<span className='text-lg m-1'><FaCartPlus /></span></Link>
             <Link to="/profile" className="text-white hover:text-green-100 flex">Profile<span className='text-lg m-1'><FaUser /></span></Link>
             {isAuthenticated ? (
               <button onClick={() => logout()} className="text-white hover:text-green-100 flex">Logout<span className='text-lg m-1'><FiLogOut /></span></button>
