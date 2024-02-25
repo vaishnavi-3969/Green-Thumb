@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { database } from '../components/Firebase';
-import { ref, set } from 'firebase/database';
+import { ref, set, get } from 'firebase/database';
 
 const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -11,6 +11,30 @@ const Profile = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
+
+  useEffect(() => {
+    if (user) {
+      setName(user.name);
+      setEmail(user.email);
+      const generatedUsername = user.email.split('@')[0].replace(/\./g, '_');
+      setUsername(generatedUsername);
+
+      const fetchData = async () => {
+        try {
+          const snapshot = await get(ref(database, 'users/' + generatedUsername));
+          if (snapshot.exists()) {
+            const userData = snapshot.val();
+            setLocation(userData.location || '');
+            setBio(userData.bio || '');
+            setFavoritePlants(userData.favoritePlants || '');
+          }
+        } catch (error) {
+          console.error('Error fetching user data:', error);
+        }
+      };
+      fetchData();
+    }
+  }, [user]);
 
   const handleSave = async () => {
     try {
