@@ -23,9 +23,9 @@ const Navbar = () => {
             <Link to="/leaderboard" className="text-white hover:text-green-100 flex">Leaderboard<span className='text-lg m-1'><FaStar /></span></Link>
             <Link to="/gardening_challenges" className='text-white hover:text-green-100 flex'>Challenges<span className='text-lg m-1'><FaSeedling /></span></Link>
             <Link to="/marketplace" className='text-white hover:text-green-100 flex'>Marketplace<span className='text-lg m-1'><FaCartPlus /></span></Link>
-            <Link to="/profile" className="text-white hover:text-green-100 flex">Profile<span className='text-lg m-1'><FaUser /></span></Link>
+            <Link to="/profile" className="text-white hover:text-green-100 flex"><span className='text-lg m-1'><FaUser /></span></Link>
             {isAuthenticated ? (
-              <button onClick={() => logout()} className="text-white hover:text-green-100 flex">Logout<span className='text-lg m-1'><FiLogOut /></span></button>
+              <button onClick={() => logout()} className="text-white hover:text-green-100 flex"><span className='text-lg m-1'><FiLogOut /></span></button>
             ) : (
               <button onClick={() => loginWithRedirect()} className="text-white hover:text-green-100">Login<span className='text-lg m-1'><FiLogIn /></span></button>
             )}
