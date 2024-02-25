@@ -1,4 +1,5 @@
 <div>
+  <p>GDSC Solution Challenge 2024</p>
 <h1>Tech Stack:</h1>
 <div align='center'>
 <img src="https://skillicons.dev/icons?i=react,tailwind,git,github,js,vercel" />
