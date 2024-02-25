@@ -33,6 +33,8 @@ const Profile = () => {
     if (user) {
       setName(user.name);
       setEmail(user.email);
+      const generatedUsername = user.email.split('@')[0].replace(/\./g, '_');
+      setUsername(generatedUsername);
     }
   }, [user])
 
@@ -53,8 +55,8 @@ const Profile = () => {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-semibold">Enter Username (can only contain alphabets)</label>
-            <input value={username} onChange={(e) => setUsername(e.target.value)} className="form-textarea w-full mt-1" />
+            <label className="block text-sm font-semibold">Username</label>
+            {username}
           </div>
           <div>
             <label className="block text-sm font-semibold">About Me</label>
