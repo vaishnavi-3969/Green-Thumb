@@ -119,8 +119,8 @@ if (!garden) {
 }
 
 return (
-  <div className="bg-gray-900 text-white p-6">
-    <h2 className="text-3xl font-bold mb-4">Community Gardening Spaces</h2>
+  <div className="from-color4 to-color1 text-center text-white p-6">
+    <h2 className="text-3xl font-bold mb-4">Community Gardening Spaces Near You</h2>
 
     <div className="mt-8 grid grid-cols-2 gap-4">
       {gardens.map((garden) => (
@@ -144,6 +144,7 @@ return (
         </div>
       ))}
     </div>
+    
   </div>
 );
             }
