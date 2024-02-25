@@ -8,7 +8,7 @@ const Navbar = () => {
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
   return (
-    <nav className="bg-green-500 p-4">
+    <nav className="bg-color4 p-4">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <div>

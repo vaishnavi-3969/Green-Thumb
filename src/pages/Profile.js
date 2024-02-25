@@ -80,7 +80,7 @@ const Profile = () => {
 
   return (
     <div>
-      <div className='flex justify-center items-center min-h-screen bg-color4'>
+      <div className='flex justify-center items-center min-h-screen bg-gradient-to-r from-color4 to-color1 '>
         <div className="block min-w-[700px] px-4 py-8 text-center">
           <h1 className="text-3xl font-semibold mb-4 text-yellow-300">Profile</h1>
           {isAuthenticated && (
@@ -89,7 +89,7 @@ const Profile = () => {
                 <img src={user.picture} alt={user.name} className="w-12 h-12 rounded-full" />
                 <div className='text-center'>
                   <h2 className="text-xl font-semibold text-white">{name}</h2>
-                  <p className="text-gray-600 text-gray-300">{email}</p>
+                  <p className=" text-gray-300">{email}</p>
                 </div>
               </div>
               <div className='p-3 bg-gray-100 rounded m-1'>
