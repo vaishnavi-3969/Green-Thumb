@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-
+import { database } from '../components/Firebase';
+import { ref, set } from 'firebase/database';
 
 const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -9,12 +10,23 @@ const Profile = () => {
   const [favoritePlants, setFavoritePlants] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
- 
+  const [username, setUsername] = useState('');
 
   const handleSave = async () => {
-
+    try {
+      set(ref(database, 'users/' + username), {
+        username: username,
+        name: name,
+        email: email,
+        bio: bio,
+        location: location,
+        favoritePlants: favoritePlants
+      })
+      alert("Saved Successfullly")
+    } catch (err) {
+      alert(err)
+    }
   };
-
 
 
   useEffect(() => {
@@ -41,6 +53,10 @@ const Profile = () => {
             </div>
           </div>
           <div>
+            <label className="block text-sm font-semibold">Enter Username (can only contain alphabets)</label>
+            <input value={username} onChange={(e) => setUsername(e.target.value)} className="form-textarea w-full mt-1" />
+          </div>
+          <div>
             <label className="block text-sm font-semibold">About Me</label>
             <textarea value={bio} onChange={(e) => setBio(e.target.value)} className="form-textarea w-full mt-1" />
           </div>
@@ -54,7 +70,6 @@ const Profile = () => {
           </div>
           <div>
             <label className="block text-sm font-semibold">My Garden Scrapbook</label>
-            <input type="file" className="form-input w-full mt-1" />
           </div>
           <button onClick={handleSave} className="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">Save</button>
         </div>
