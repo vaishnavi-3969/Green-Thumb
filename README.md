@@ -80,4 +80,31 @@ GreenThumb aims to contribute to the achievement of these SDGs by promoting sust
 <div>
   <a href="https://youtu.be/8L2164F_9CA">Youtube</a>
 </div>
+<hr/>
+<div>
+  <h2>Key Features:</h2>
+  <pre>
+    1. Homepage: Initial landing page providing an overview of the platform.
+    2. Plant Tracking: Users can add plants and track activities like watering and maturing.
+    3. AI Integration (Future Plan): Planned incorporation of AI to provide recommendations based on uploaded plant images.
+    4. Community Gardens: Option to register large gardens as community gardens for volunteer assistance, with Google Maps integration.
+    5. Feed: Social media-like feature for users to share daily updates on gardening activities.
+    6. Challenges: Various gardening challenges like the 30-day watering challenge, seeding starter challenge, etc.
+    7. Resources: A tab featuring gardening tutorials, blogs, and news sourced from the News API.
+    8. Gamification: Leaderboards, badges, certificates, and streaks to engage users and encourage activity.
+    9. Marketplace: Platform for users to purchase gardening materials such as shovels, seeds, and plants
+    10.Firebase Database: Utilized for storing user information in profiles.
+    11. Authentication: Implemented using the Auth0 API.
+    </pre>
+<h2>Technologies Used:</h2>
+<pre>
+React JS: Frontend development.
+Firebase: Database management.
+Tailwind CSS: Styling and UI design.
+Git/GitHub: Version control and collaboration.
+Vercel: Deployment platform.
+News API: Integration for displaying gardening-related news.
+Auth0 API: User authentication and authorization.
+</pre>
+</div>
 </div>
