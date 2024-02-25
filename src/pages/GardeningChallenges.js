@@ -43,6 +43,11 @@ const GardeningChallenges = () => {
                         <div className='px-3 py-1 bg-blue-800 rounded-lg'>
                             <button onClick={handleSubmit} className='text-white'>RSVP (Accept Challenge)</button>
                         </div>
+                        <button className="mt-2 text-[#84DCCF] flex items-center">
+                            <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NHY1bDY2ZDlnZDZzNzV2ZzVwamtpbW05MmIgdmFpc2huYXZpLmthbGUzMDExQG0&amp;tmsrc=vaishnavi.kale3011%40gmail.com" alt="">
+                                <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif" />
+                            </a>
+                        </button>
                     </motion.div>
                 ))}
             </div>
