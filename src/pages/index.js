@@ -7,6 +7,8 @@ import MyGardens from "./MyGardens";
 import Resources from "./Resources";
 import Community from "./Community";
 import GardeningChallenges from "./GardeningChallenges";
+import Feed from "./Feed";
+import Marketplace from "./Marketplace";
 
 export {
     Home,
@@ -18,5 +20,6 @@ export {
     Resources,
     Community,
     GardeningChallenges,
-    
+    Feed,
+    Marketplace
 }

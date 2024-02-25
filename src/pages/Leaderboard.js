@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { FaTrophy, FaMedal, FaCrown, FaUserCircle } from 'react-icons/fa';
 
 const Leaderboard = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);
@@ -67,9 +68,17 @@ const Leaderboard = () => {
             </div>
             {rank === 1 && (
               <div className="text-2xl text-yellow-400">
-                <span role="img" aria-label="crown">
-                  👑
-                </span>
+                <FaCrown />
+              </div>
+            )}
+            {rank === 2 && (
+              <div className="text-2xl text-gray-400">
+                <FaTrophy />
+              </div>
+            )}
+            {rank === 3 && (
+              <div className="text-2xl text-orange-400">
+                <FaMedal />
               </div>
             )}
           </motion.div>
@@ -88,6 +97,9 @@ const Leaderboard = () => {
                 <h3 className="text-xl font-bold mb-2">{leaderboardData.length + index + 1}</h3>
                 <p className="text-gray-400">User {leaderboardData.length + index + 1}</p>
                 <p className="text-gray-400">Score: {80 - index * 10}</p>
+              </div>
+              <div className="text-2xl text-gray-400">
+                <FaUserCircle />
               </div>
             </div>
           </motion.div>
