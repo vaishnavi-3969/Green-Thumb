@@ -4,6 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Profile from "./pages/Profile";
 import { Footer, Navbar } from "./components";
 import Leaderboard from "./pages/Leaderboard";
+import MoveToTop from "./components/MoveToTop";
 
 function App() {
   const { isAuthenticated } = useAuth0();
@@ -31,6 +32,7 @@ function App() {
           }
           <Route path="*" element=<Error /> exact />
         </Routes>
+        <MoveToTop/>
         <Footer />
       </Router>
     </div>
