@@ -6,6 +6,7 @@ import Error from "./Error";
 import MyGardens from "./MyGardens";
 import Resources from "./Resources";
 import Community from "./Community";
+import GardeningChallenges from "./GardeningChallenges";
 
 export {
     Home,
@@ -15,5 +16,7 @@ export {
     Error,
     MyGardens,
     Resources,
-    Community
+    Community,
+    GardeningChallenges,
+    
 }
