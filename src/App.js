@@ -3,6 +3,7 @@ import { Community, Error, GardeningChallenges, Home, Landing, MyGardens, Resour
 import { useAuth0 } from "@auth0/auth0-react";
 import Profile from "./pages/Profile";
 import { Footer, Navbar } from "./components";
+import Leaderboard from "./pages/Leaderboard";
 
 function App() {
   const { isAuthenticated } = useAuth0();
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/community" element=<Community /> exact />
                 <Route path="/resources" element=<Resources/> exact/>
                 <Route path="/gardening_challenges" element=<GardeningChallenges/> exact/>
+                <Route path="/leaderboard" element=<Leaderboard/> exact/>
               </>
             ) : (
               <Route path="/" element=<Landing /> exact />
