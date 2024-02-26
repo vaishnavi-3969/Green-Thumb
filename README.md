@@ -1,10 +1,21 @@
 <div>
   <p>GDSC Solution Challenge 2024</p>
-<h1>Tech Stack:</h1>
+<h3>Tech Stack:</h3>
 <div align='center'>
 <img src="https://skillicons.dev/icons?i=react,tailwind,git,github,js,vercel" />
 </div>
-  
+  <h3>Sustainable Development Goals (SDGs) Addressed:</h3>
+<div align='center'>
+  <img src="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/1061b91a-4b5d-4a1e-921d-c58c4cd7fac7" width="120px"/>
+  <img src ="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/59e36130-0eb8-4558-ba1f-20bc6fd76a4b" width="120px"/>
+  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/27722dab-024c-4a89-b193-1f506369b2d3" width="120px"/>
+  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/2e1b0ac9-5c54-4a9b-801d-446acc7e2717" width="120px"/>
+  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/2d06a90b-19e2-4480-a1d3-d426e35ef23d" width="120px"/>
+  <img src="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/6ecac3af-bcc3-4eb9-8632-efae8fbc5cfd" width="120px"/>
+  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/6141d7ac-d9b8-4f05-aff5-fb4100bd3ca1" width="120px"/>
+
+</div>
+
 <h1>Problem Statement:</h1>
 <p>In today's fast-paced world, where urbanization is on the rise and green spaces are diminishing, there is a growing need for accessible platforms that promote sustainable practices, community engagement, and healthy lifestyles. Lack of access to fresh, nutritious food and limited opportunities for outdoor activities contribute to various societal challenges, including food insecurity, poor physical and mental health, and environmental degradation.
 
@@ -58,23 +69,6 @@ Knowledge Sharing: Provide a repository of gardening resources, including articl
 
 4. Community Gardens Map: Display a map showing the locations of community gardens, public green spaces, nurseries, and gardening resources, allowing users to contribute updates and reviews.
 
-</ul>
-<h3>Sustainable Development Goals (SDGs) Addressed:</h3>
-<ul>
-  
-  1. SDG 2: Zero Hunger
-  
-  2. SDG 3: Good Health and Well-Being
-  
-  3. SDG 11: Sustainable Cities and Communities
-  
-  4. SDG 12: Responsible Consumption and Production
-  
-  5. SDG 13: Climate Action
-  
-  6. SDG 15: Life on Land
-  
-  7. SDG 17: Partnerships for the Goals
 </ul>
 
 GreenThumb aims to contribute to the achievement of these SDGs by promoting sustainable food systems, enhancing community well-being, and fostering partnerships for sustainable development.
