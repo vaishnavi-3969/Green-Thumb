@@ -6,13 +6,13 @@
 </div>
   <h3>Sustainable Development Goals (SDGs) Addressed:</h3>
 <div align='center'>
-  <img src="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/1061b91a-4b5d-4a1e-921d-c58c4cd7fac7" width="120px"/>
-  <img src ="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/59e36130-0eb8-4558-ba1f-20bc6fd76a4b" width="120px"/>
-  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/27722dab-024c-4a89-b193-1f506369b2d3" width="120px"/>
-  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/2e1b0ac9-5c54-4a9b-801d-446acc7e2717" width="120px"/>
-  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/2d06a90b-19e2-4480-a1d3-d426e35ef23d" width="120px"/>
-  <img src="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/6ecac3af-bcc3-4eb9-8632-efae8fbc5cfd" width="120px"/>
-  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/6141d7ac-d9b8-4f05-aff5-fb4100bd3ca1" width="120px"/>
+  <img src="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/1061b91a-4b5d-4a1e-921d-c58c4cd7fac7" width="100px"/>
+  <img src ="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/59e36130-0eb8-4558-ba1f-20bc6fd76a4b" width="100px"/>
+  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/27722dab-024c-4a89-b193-1f506369b2d3" width="100px"/>
+  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/2e1b0ac9-5c54-4a9b-801d-446acc7e2717" width="100px"/>
+  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/2d06a90b-19e2-4480-a1d3-d426e35ef23d" width="100px"/>
+  <img src="https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/6ecac3af-bcc3-4eb9-8632-efae8fbc5cfd" width="100px"/>
+  <img src = "https://github.com/vaishnavi-3969/Green-Thumb-Community/assets/80088403/6141d7ac-d9b8-4f05-aff5-fb4100bd3ca1" width="100px"/>
 
 </div>
 
